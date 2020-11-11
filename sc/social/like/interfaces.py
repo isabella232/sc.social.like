@@ -153,7 +153,7 @@ class ISocialLikeSettings(model.Schema):
     )
 
     form.widget('fallback_image', NamedImageFieldWidget)
-    fallback_image = schema.ASCII(
+    fallback_image = schema.Bytes(
         title=_(u'Fallback image'),
         description=_(
             u'help_fallback_image',
